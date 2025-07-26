@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <style>
+    body {
+      background-color: #7FFFD4;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 450px;
+      margin: 50px auto;
+      background-color: #F0F8FF;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .checkbox-group,
+    .radio-group {
+      margin-top: 10px;
+    }
+
+    .checkbox-group label,
+    .radio-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .submit-btn {
+      background-color: green;
+      color: white;
+      padding: 10px 15px;
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #e18d25;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Survey Form</h2>
+    <p style="text-align:center;">User stories survey form</p>
+
+    <form>
+      <div class="form-group">
+        <label>Name:</label>
+        <input type="text" placeholder="Enter Name">
+      </div>
+
+      <div class="form-group">
+        <label>E-mail:</label>
+        <input type="email" placeholder="Enter E-Mail">
+      </div>
+
+      <div class="form-group">
+        <label>Work Experience:</label>
+        <input type="number" placeholder="Enter Number">
+      </div>
+
+      <div class="form-group">
+        <label>Are you comfortable in investing in real estate on platform without first investigating properly</label>
+        <select>
+		
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Suggestions to build trusted platform</label>
+        <textarea rows="2"></textarea>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <label>You are ready to invest in:</label>
+        <label><input type="checkbox"> Real Estate</label>
+        <label><input type="checkbox"> Mutual Funds</label>
+        <label><input type="checkbox"> Crypto Currency</label>
+        <label><input type="checkbox"> Stocks & Bonds</label>
+      </div>
+
+      <div class="form-group radio-group">
+        <label>Are you ready for further contact</label>
+        <label><input type="radio" name="contact"> Yes</label>
+        <label><input type="radio" name="contact"> No</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
